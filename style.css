@@ -94,7 +94,7 @@ body {
 
 .catagories p:hover {
     background-color: transparent;
-    color: #A435F0;
+    color: rgb(201, 27, 201);
     border: solid 1px #A435F0;
     cursor: pointer;
 }
