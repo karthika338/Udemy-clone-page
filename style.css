@@ -105,14 +105,13 @@ body {
 }
 
 .sale-image__offer {
-    width: 430px;
-    height: 100px;
+    width: 35%;
     background-color: #5ed3e0;
     color: rgb(18, 18, 18);
     border: solid black 2px;
     position: absolute;
-    bottom: 200px;
-    left: 150px;
+    top: 10%;
+    left: 10%;
     padding: 2%;
     animation-name: zoom;
     animation-duration: 1s;
@@ -156,8 +155,9 @@ body {
 }
 
 .course__card {
-    width: 280px;
-    padding-left: 10px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 }
 
 .course__card img {
@@ -230,4 +230,34 @@ body {
     margin: 20px;
     align-items: center;
     padding: 10px;
+}
+
+.navbar__s4 {
+    display: none;
+}
+
+/** Media Querie**/
+@media screen and (max-width:800px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .course__card {
+        flex-basis: 40%;
+    }
+
+    .catagories {
+        display: none;
+    }
+
+    .navbar__s2,
+    .navbar__s3 {
+        display: none;
+    }
+
+    .navbar__s4 {
+        display: block;
+    }
 }
